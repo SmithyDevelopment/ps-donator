@@ -35,12 +35,12 @@ end)
 
 CreateThread(function()
 
-    local blip = AddBlipForCoord(Config.NPC)
+    local blip = AddBlipForCoord(vector4(-1392.81, -3261.92, 13.94, 154.33))
     SetBlipSprite(blip, 351)
     SetBlipScale(blip, 1.0)
     SetBlipColour(blip, 50)
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentSubstringPlayerName("Donator Store")
+    AddTextComponentSubstringPlayerName("Donator Shop")
     EndTextCommandSetBlipName(blip)
 
     exports['qb-target']:SpawnPed({
